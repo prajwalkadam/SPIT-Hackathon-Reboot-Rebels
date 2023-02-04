@@ -31,7 +31,5 @@ public class FactBook {
         int rn = rm.nextInt(mFacts.length);
         fact = mFacts[rn];
         return fact;
-
-
     }
 }

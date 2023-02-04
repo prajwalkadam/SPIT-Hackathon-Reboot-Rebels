@@ -69,16 +69,17 @@ public class Scan extends AppCompatActivity implements View.OnClickListener {
                         "Diethyl Phthalate", "Triethyl Citrate", "Plastic"});
         // Fogg Fragrance Body Spray
         mapping.put("8908001158480",
-                new String[]{"AQUA / WATER", "GLYCERIN", "ALCOHOL", "DIPROPYLENE GLYCOL", "BUTYLENE GLYCOL", "PEG",
-                        "PPG", "POLYBUTYLENE GLYCOL", "NIACINAMIDE", "HYDROXYETHYLPIPERAZINE", "ETHANE",
-                        "SULFONIC ACID", "BIS-PEG-18", "METHYL ETHER DIMETHYL SILANE", "ETHYL ASCORBIC ACID",
-                        "ISONONYL ISONONANOATE", "BHT", "LINALOOL", "GERANIOL", "PARFUM", "FRAGRANCE", "SALICYLIC ACID",
-                        "SODIUM CITRATE", "SODIUM HYALURONATE", "PHENOXYETHANOL", "PHENYLETHYL RESORCINOL", "ADENOSINE",
-                        "AMMONIUM POLYACRYLOYLDIMETHYL TAURATE", "TOCOPHERYL ACETATE", "DISODIUM EDTA", "LIMONENE",
-                        "HYDROGENATED LECITHIN", "CITRIC ACID", "CITRUS LIMON FRUIT EXTRACT", "LEMON FRUIT EXTRACT",
-                        "CITRUS JUNOS FRUIT EXTRACT", "XANTHAN GUM", "MALTODEXTRIN",
-                        "ACETYL TRIFLUOROMETHYLPHENYL VALYLGLYCINE", "OXOTHIAZOLIDINECARBOXYLIC ACID",
-                        "BENZYL SALICYLATE", "BENZYL ALCOHOL","Triclosan"});
+                new String[]{"Aqua / Water", "Glycerin", "Alcohol", "Dipropylene Glycol", "Butylene Glycol", "Peg",
+                        "Ppg", "Polybutylene Glycol", "Niacinamide", "Hydroxyethylpiperazine", "Ethane",
+                        "Sulfonic Acid", "Bis-Peg-18", "Methyl Ether Dimethyl Silane", "Ethyl Ascorbic Acid",
+                        "Isononyl Isononanoate", "Bht", "Linalool", "Geraniol", "Parfum", "Fragrance", "Salicylic Acid",
+                        "Sodium Citrate", "Sodium Hyaluronate", "Phenoxyethanol", "Phenylethyl Resorcinol", "Adenosine",
+                        "Ammonium Polyacryloyldimethyl Taurate", "Tocopheryl Acetate", "Disodium Edta", "Limonene",
+                        "Hydrogenated Lecithin", "Citric Acid", "Citrus Limon Fruit Extract", "Lemon Fruit Extract",
+                        "Citrus Junos Fruit Extract", "Xanthan Gum", "Maltodextrin",
+                        "Acetyl Trifluoromethylphenyl Valylglycine", "Oxothiazolidinecarboxylic Acid",
+                        "Benzyl Salicylate", "Benzyl Alcohol","Triclosan"
+                });
         // 50 50
         mapping.put("8901063017627",
                 new String[]{
@@ -93,20 +94,16 @@ public class Scan extends AppCompatActivity implements View.OnClickListener {
 
         // Garnier
         mapping.put(" 8901526005161",
-                new String[]{
-                        "AQUA / WATER", "GLYCERIN", "ALCOHOL", "DIPROPYLENE GLYCOL", "BUTYLENE GLYCOL",
-                        "PEG/PPG/POLYBUTYLENE GLYCOL-8/5/3 GLYCERIN", "NIACINAMIDE",
-                        "HYDROXYETHYLPIPERAZINE ETHANE SULFONIC ACID",
-                        " BIS-PEG-18 METHYL ETHER DIMETHYL SILANE", "3-O-ETHYL ASCORBIC ACID", "ISONONYL ISONONANOATE",
-                        "BHT", " LINALOOL", " GERANIOL",
-                        " PARFUM / FRAGRANCE", " SALICYLIC ACID", "SODIUM CITRATE", "SODIUM HYALURONATE",
-                        "PHENOXYETHANOL", "PHENYLETHYL RESORCINOL", "ADENOSINE",
-                        "AMMONIUM POLYACRYLOYLDIMETHYL TAURATE", "TOCOPHERYL ACETATE", "DISODIUM EDTA", "LIMONENE",
-                        "HYDROGENATED LECITHIN", "CITRIC ACID",
-                        "CITRUS LIMON FRUIT EXTRACT / LEMON FRUIT EXTRACT", "CITRUS JUNOS FRUIT EXTRACT", "XANTHAN GUM",
-                        "MALTODEXTRIN",
-                        "ACETYL TRIFLUOROMETHYLPHENYL VALYLGLYCINE", "OXOTHIAZOLIDINECARBOXYLIC ACID",
-                        "BENZYL SALICYLATE", "BENZYL ALCOHOL"
+                new String[]{"Aqua / Water", "Glycerin", "Alcohol", "Dipropylene Glycol", "Butylene Glycol", "Peg",
+                        "Ppg", "Polybutylene Glycol", "Niacinamide", "Hydroxyethylpiperazine", "Ethane",
+                        "Sulfonic Acid", "Bis-Peg-18", "Methyl Ether Dimethyl Silane", "Ethyl Ascorbic Acid",
+                        "Isononyl Isononanoate", "Bht", "Linalool", "Geraniol", "Parfum", "Fragrance", "Salicylic Acid",
+                        "Sodium Citrate", "Sodium Hyaluronate", "Phenoxyethanol", "Phenylethyl Resorcinol", "Adenosine",
+                        "Ammonium Polyacryloyldimethyl Taurate", "Tocopheryl Acetate", "Disodium Edta", "Limonene",
+                        "Hydrogenated Lecithin", "Citric Acid", "Citrus Limon Fruit Extract", "Lemon Fruit Extract",
+                        "Citrus Junos Fruit Extract", "Xanthan Gum", "Maltodextrin",
+                        "Acetyl Trifluoromethylphenyl Valylglycine", "Oxothiazolidinecarboxylic Acid",
+                        "Benzyl Salicylate", "Benzyl Alcohol","Triclosan"
                 });
         if (intentResult != null) {
             if (intentResult.getContents() == null) {
@@ -122,10 +119,10 @@ public class Scan extends AppCompatActivity implements View.OnClickListener {
 //                contentofProduct.setText(mapping.get(code).toString());
 
                 ArrayList<String> harmfuList = new ArrayList<>();
-                String[] str = new String[]{"Triclosan", "Exfoliating microbeads", "Oxybenzone", "Synthetic fragrances",
-                        "Plastic", "Polyethylene terephthalate", "Polyethylene", "Sodium lauryl sulfate", "Formaldehyde",
-                        "Parabens", "methylparaben", "propylparaben", "butylparaben", "ethylparaben", "polypropylene",
-                        "Phthalates", "Nonylphenol ethoxylates", "Bisphenol A"};
+                String[] str = new String[]{"Triclosan", "Exfoliating Microbeads", "Oxybenzone", "Synthetic Fragrances",
+                        "Plastic", "Polyethylene Terephthalate", "Polyethylene", "Sodium Lauryl Sulfate", "Formaldehyde",
+                        "Parabens", "Methylparaben", "Propylparaben", "Butylparaben", "Ethylparaben", "Polypropylene",
+                        "Phthalates", "Nonylphenol Ethoxylates", "Bisphenol A"};
                 Collections.addAll(harmfuList, str);
 //                String st = "8901063017627"; // change here
                 ArrayList<String> harmfulingredients = new ArrayList<>();

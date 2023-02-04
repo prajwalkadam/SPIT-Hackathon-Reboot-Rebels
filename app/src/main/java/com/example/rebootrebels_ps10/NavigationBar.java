@@ -21,7 +21,7 @@ public class NavigationBar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_bar);
-        TextView facts= findViewById(R.id.fact);
+//        TextView facts= findViewById(R.id.fact);
         //AlertDialog.Builder builder = new AlertDialog.Builder(NavigationBar.this);
         BubbleNavigationLinearView bubbleNavigation = findViewById(R.id.bubbleNavigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -48,20 +48,20 @@ public class NavigationBar extends AppCompatActivity {
                         selectedFragment).commit();
             }
         });
-        String fact=mFactBook.getFact();
-//        builder.setMessage(fact);
-//        builder.setTitle("Fun Fact!");
-//        builder.setCancelable(true);
-//        AlertDialog alertDialog = builder.create();
-//        alertDialog.show();
-        //facts.setText(fact);
-        final AlertDialog.Builder builder = new AlertDialog.Builder(NavigationBar.this,R.style.CustomAlertDialog);
-        ViewGroup viewGroup = findViewById(android.R.id.content);
 
-        View dialogView = LayoutInflater.from(NavigationBar.this).inflate(R.layout.custom_dialog, viewGroup, false);
-        Button buttonOk=dialogView.findViewById(R.id.buttonOk);
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.custom_dialog, null);
+        TextView facts = dialogView.findViewById(R.id.fact);
+
+        String fact = mFactBook.getFact();
+        facts.setText(fact);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(NavigationBar.this, R.style.CustomAlertDialog);
         builder.setView(dialogView);
-        final AlertDialog alertDialog = builder.create();
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+
+        Button buttonOk=dialogView.findViewById(R.id.buttonOk);
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
