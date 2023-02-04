@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(() -> {
-            Intent intent=new Intent(MainActivity.this,NavigationBar.class);
+            Intent intent=new Intent(MainActivity.this,LoginPage.class);
             startActivity(intent);
             finish();
         },SPLASH_SCREEN);
@@ -27,6 +27,6 @@ public class MainActivity extends AppCompatActivity {
                 .largeCircularIcon()
                 .setPicture(R.drawable.noti_image2)
                 .setColor(R.color.black)
-                .show();
+        .show();
     }
 }
