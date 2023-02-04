@@ -22,19 +22,5 @@ public class StarredFragment extends Fragment {
     }
 
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_starred, container, false);
-        FloatingActionButton fab = view.findViewById(R.id.fabchat);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), ChatBot.class);
-                startActivity(intent);
-            }
-        });
-        return view;
-    }
+
 }

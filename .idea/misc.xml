@@ -3,11 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/back_arrow.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/bg_chat_send.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/card_bg.xml" value="0.1" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_chatbot_send.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_game_icons_clothesline.xml" value="0.2005" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_material_symbols_cloud_outline.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_mdi_lightbulb_group_off.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_shower.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_vector.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_chat_bot.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_create_account.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_login_page.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_home.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_search.xml" value="0.264" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_starred.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_starredd.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable-v24/back_arrow.xml" value="0.193" />
         <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable-v24/bg_chat_receive.xml" value="0.193" />
         <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable-v24/border_outline.xml" value="0.131" />

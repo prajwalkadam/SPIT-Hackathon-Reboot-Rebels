@@ -10,8 +10,8 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="110dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="120dp"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:columnOrderPreserved="false"
@@ -257,5 +257,14 @@
         </androidx.cardview.widget.CardView>
 
     </GridLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabchat"
+        app:backgroundTint="@color/button_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="ChatBot"
+        android:src="@drawable/chatbot" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
