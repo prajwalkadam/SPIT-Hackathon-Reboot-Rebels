@@ -5,17 +5,24 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.text.style.ForegroundColorSpan;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class CreateAccount extends AppCompatActivity {
-    TextView textView,password;
+    TextView textView,emailEdit,password;
     ImageView ShowHidePass;
+    Button signUp;
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +30,8 @@ public class CreateAccount extends AppCompatActivity {
         textView =findViewById(R.id.sign_up);
         ShowHidePass = findViewById(R.id.eye_hide);
         password =findViewById(R.id.password_edit);
+        emailEdit = findViewById(R.id.email_edit);
+        signUp=findViewById(R.id.sign_in);
         String text="Already have an account? Sign in";
         ForegroundColorSpan green = new ForegroundColorSpan(Color.rgb(50,142,40));
         ForegroundColorSpan blackish = new ForegroundColorSpan(Color.rgb(47,46,65));
@@ -46,5 +55,57 @@ public class CreateAccount extends AppCompatActivity {
             }
         });
         textView.setOnClickListener(view -> startActivity(new Intent(CreateAccount.this, LoginPage.class)));
+        mAuth = FirebaseAuth.getInstance();
+        signUp.setOnClickListener(view -> createUser());
+    }
+    private void createUser(){
+        String email = emailEdit.getText().toString();
+        String passwordMatch = password.getText().toString();
+
+        if (TextUtils.isEmpty(email)){
+            emailEdit.setError("Email cannot be empty");
+            emailEdit.requestFocus();
+        }else if (TextUtils.isEmpty(passwordMatch)){
+            password.setError("Password cannot be empty");
+            password.requestFocus();
+        }else{
+            //                @Override
+//                public void onComplete(@NonNull Task<AuthResult> task) {
+//                    if (task.isSuccessful()) {
+//                        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+//                        assert firebaseUser != null;
+//                        String userid = firebaseUser.getUid();
+//                        reference = FirebaseDatabase.getInstance().getReference("Users").child(userid);
+//                        HashMap<String, String> hashMap = new HashMap<>();
+//                        hashMap.put("id", userid);
+//                        hashMap.put("email",email);
+//                        hashMap.put("password",password);
+//
+//                        reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                if (task.isSuccessful()){
+//                                    Intent intent = new Intent(CreateAccount.this, Login.class);
+//                                    Toast.makeText(CreateAccount.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+//                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//                                    startActivity(intent);
+//                                    finish();
+//                                }
+//                            }
+//                        });
+//                    }
+            mAuth.createUserWithEmailAndPassword(email,passwordMatch).addOnCompleteListener(task -> {
+                if (task.isSuccessful()){
+                    Toast.makeText(CreateAccount.this, "User registered successfully", Toast.LENGTH_SHORT).show();
+                    Intent i= new Intent(CreateAccount.this, LoginPage.class);
+                    i.putExtra("email",email);
+                    //i.putExtra("password",password)
+                    startActivity(i);
+                    finish();
+                }else{
+                    Toast.makeText(CreateAccount.this, "Registration Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 }

@@ -5,17 +5,24 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
+import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.text.style.ForegroundColorSpan;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class LoginPage extends AppCompatActivity {
-    TextView textView,password;
+    TextView textView,emailEdit,forgotPass,password;
     ImageView ShowHidePass;
+    Button login;
+    FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +30,9 @@ public class LoginPage extends AppCompatActivity {
         textView =findViewById(R.id.sign_up);
         ShowHidePass = findViewById(R.id.eye_hide);
         password =findViewById(R.id.password_edit);
+        emailEdit =findViewById(R.id.email_edit);
+        login = findViewById(R.id.sign_in);
+        forgotPass=findViewById(R.id.forgot_password);
         String text="New to AppName? Sign up";
         ForegroundColorSpan green = new ForegroundColorSpan(Color.rgb(50,132,40));
         ForegroundColorSpan blackish = new ForegroundColorSpan(Color.rgb(47,46,65));
@@ -46,5 +56,33 @@ public class LoginPage extends AppCompatActivity {
             }
         });
         textView.setOnClickListener(view -> startActivity(new Intent(LoginPage.this, CreateAccount.class)));
+        mAuth = FirebaseAuth.getInstance();
+        login.setOnClickListener(view -> {
+            loginUser();
+        });
+    }
+    private void loginUser() {
+        String email = emailEdit.getText().toString();
+        String passwordMatch = password.getText().toString();
+
+        if (TextUtils.isEmpty(email)) {
+            emailEdit.setError("Email cannot be empty");
+            emailEdit.requestFocus();
+        } else if (TextUtils.isEmpty(passwordMatch)) {
+            password.setError("Password cannot be empty");
+            password.requestFocus();
+        } else {
+            mAuth.signInWithEmailAndPassword(email, passwordMatch).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(LoginPage.this, "User logged in successfully", Toast.LENGTH_SHORT).show();
+                    Intent i= new Intent(LoginPage.this, NavigationBar.class);
+                    startActivity(i);
+                    finish();
+                } else {
+                    Toast.makeText(LoginPage.this, "Log in Error: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
     }
 }

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "145164345562",
+    "project_id": "rebootrebels-3dbd0",
+    "storage_bucket": "rebootrebels-3dbd0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145164345562:android:621f27d79fa129221505e3",
+        "android_client_info": {
+          "package_name": "com.example.rebootrebels_ps10"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "145164345562-4v190rak3m0vv9pfb3fg01cn92o82df6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rebootrebels_ps10",
+            "certificate_hash": "e9c0981b1c2a9573cc2f6088a5a616c80c56a3ef"
+          }
+        },
+        {
+          "client_id": "145164345562-im2h9g53d8f146kfhbkm23cur2u98mag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD7nAUygbPRErpr73I4ftGrKUuFXI16XY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "145164345562-im2h9g53d8f146kfhbkm23cur2u98mag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
