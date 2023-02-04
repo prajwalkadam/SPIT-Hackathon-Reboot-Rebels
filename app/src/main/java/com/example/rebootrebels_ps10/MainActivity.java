@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(() -> {
-            Intent intent=new Intent(MainActivity.this,LoginPage.class);
+            Intent intent=new Intent(MainActivity.this,ChatBot.class);
             startActivity(intent);
             finish();
         },SPLASH_SCREEN);
