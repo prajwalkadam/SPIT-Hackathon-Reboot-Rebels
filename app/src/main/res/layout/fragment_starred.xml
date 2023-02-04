@@ -4,14 +4,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".StarredFragment">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Upload any photo related \n to sustainable drive and get a chance to win rewards. "
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_semibold_italic"
+            android:textSize="16sp"
+            android:gravity="center"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Starred Fragment"
-        android:textColor="#000000"
-        android:textSize="25sp"
-        android:gravity="center"/>
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/msg"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-296dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/capture"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/msg"
+            android:layout_toRightOf="@+id/sign_in"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-296dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Capture"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
 
 
 </FrameLayout>
