@@ -21,6 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
+import java.util.UUID;
 
 public class CreateAccount extends AppCompatActivity {
     TextView textView,emailEdit,password,name;
@@ -39,7 +40,7 @@ public class CreateAccount extends AppCompatActivity {
         password =findViewById(R.id.password_edit);
         emailEdit = findViewById(R.id.email_edit);
         signUp=findViewById(R.id.sign_in);
-        name=findViewById(R.id.username);
+        name=findViewById(R.id.username_edit);
         users = new Users();
         String text="Already have an account? Sign in";
         ForegroundColorSpan green = new ForegroundColorSpan(Color.rgb(50,142,40));
@@ -71,6 +72,7 @@ public class CreateAccount extends AppCompatActivity {
         String email = emailEdit.getText().toString();
         String passwordMatch = password.getText().toString();
         String username = name.getText().toString();
+        String userID = UUID.randomUUID().toString();
         if (TextUtils.isEmpty(email)){
             emailEdit.setError("Email cannot be empty");
             emailEdit.requestFocus();
@@ -81,11 +83,13 @@ public class CreateAccount extends AppCompatActivity {
             mAuth.createUserWithEmailAndPassword(email,passwordMatch).addOnCompleteListener(task -> {
                 if (task.isSuccessful()){
                     HashMap<String, String> hashMap = new HashMap<>();
+                    hashMap.put("userid",userID);
                     hashMap.put("email",email);
                     hashMap.put("passwordMatch",passwordMatch);
                     hashMap.put("username", username);
                     hashMap.put("qScore", "0");
                     hashMap.put("tScore", "0");
+
                     // below line is used to get reference for our database.
                     FirebaseDatabase.getInstance().getReference().child("Users").setValue(hashMap);
                     Toast.makeText(CreateAccount.this, "User registered successfully", Toast.LENGTH_SHORT).show();

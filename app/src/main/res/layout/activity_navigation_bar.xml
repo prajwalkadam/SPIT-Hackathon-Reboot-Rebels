@@ -50,8 +50,8 @@
             android:layout_weight="1"
             app:bt_colorActive="@color/button_bg"
             app:bt_colorInactive="@color/black"
-            app:bt_icon="@drawable/ic_star"
-            app:bt_title="Starred" />
+            app:bt_icon="@drawable/arcticons_rewards"
+            app:bt_title="Earn" />
 
         <com.gauravk.bubblenavigation.BubbleToggleView
             android:id="@+id/starredd"

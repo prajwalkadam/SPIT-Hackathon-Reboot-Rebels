@@ -17,12 +17,11 @@ import com.gauravk.bubblenavigation.listener.BubbleNavigationChangeListener;
 public class NavigationBar extends AppCompatActivity {
     Fragment selectedFragment = null;
     private FactBook mFactBook=new FactBook();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_bar);
-//        TextView facts= findViewById(R.id.fact);
-        //AlertDialog.Builder builder = new AlertDialog.Builder(NavigationBar.this);
         BubbleNavigationLinearView bubbleNavigation = findViewById(R.id.bubbleNavigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new com.example.rebootrebels_ps10.HomeFragment()).commit();
