@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -8,20 +9,24 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fact Mania"
+            android:textColor="@color/black"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            app:fontFamily="@font/poppins_bold" />
+
         <TextView
             android:id="@+id/fact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text=""
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:fontFamily="@font/poppins_italic" />
         <Button
             android:id="@+id/buttonOk"
             android:layout_width="200dp"
@@ -29,8 +34,9 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/poppins_semibold"
-            android:background="#FFD400"
-            android:text=""
+            android:background="@drawable/button_bg"
+            android:textAllCaps="false"
+            android:text="Great"
             android:textColor="#FFF" />
     </LinearLayout>
 </LinearLayout>

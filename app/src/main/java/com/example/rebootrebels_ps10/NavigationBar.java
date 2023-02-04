@@ -21,6 +21,7 @@ public class NavigationBar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_bar);
+        TextView facts= findViewById(R.id.fact);
         //AlertDialog.Builder builder = new AlertDialog.Builder(NavigationBar.this);
         BubbleNavigationLinearView bubbleNavigation = findViewById(R.id.bubbleNavigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -53,9 +54,7 @@ public class NavigationBar extends AppCompatActivity {
 //        builder.setCancelable(true);
 //        AlertDialog alertDialog = builder.create();
 //        alertDialog.show();
-
-//        TextView facts= findViewById(R.id.fact);
-//        facts.setText(fact);
+        //facts.setText(fact);
         final AlertDialog.Builder builder = new AlertDialog.Builder(NavigationBar.this,R.style.CustomAlertDialog);
         ViewGroup viewGroup = findViewById(android.R.id.content);
 

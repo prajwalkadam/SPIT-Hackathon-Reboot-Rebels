@@ -64,5 +64,4 @@
             app:bt_title="Starred" />
     </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 
-
 </RelativeLayout>

@@ -1,5 +1,6 @@
 package com.example.rebootrebels_ps10;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,19 +11,31 @@ import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.text.style.ForegroundColorSpan;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginPage extends AppCompatActivity {
     TextView textView,emailEdit,forgotPass,password;
     ImageView ShowHidePass;
     Button login;
+    ImageButton gLogin;
     FirebaseAuth mAuth;
+
+    private GoogleApiClient googleApiClient;
+    private static final int RC_SIGN_IN = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +46,7 @@ public class LoginPage extends AppCompatActivity {
         emailEdit =findViewById(R.id.email_edit);
         login = findViewById(R.id.sign_in);
         forgotPass=findViewById(R.id.forgot_password);
+        gLogin = findViewById(R.id.google);
         String text="New to AppName? Sign up";
         ForegroundColorSpan green = new ForegroundColorSpan(Color.rgb(50,132,40));
         ForegroundColorSpan blackish = new ForegroundColorSpan(Color.rgb(47,46,65));
@@ -61,10 +75,11 @@ public class LoginPage extends AppCompatActivity {
             loginUser();
         });
     }
+
+
     private void loginUser() {
         String email = emailEdit.getText().toString();
         String passwordMatch = password.getText().toString();
-
         if (TextUtils.isEmpty(email)) {
             emailEdit.setError("Email cannot be empty");
             emailEdit.requestFocus();
