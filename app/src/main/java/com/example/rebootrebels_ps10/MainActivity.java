@@ -15,17 +15,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         new Handler().postDelayed(() -> {
-            Intent intent=new Intent(MainActivity.this,Scan.class);
+            Intent intent=new Intent(MainActivity.this,NavigationBar.class);
             startActivity(intent);
             finish();
         },SPLASH_SCREEN);
         Notify.build(getApplicationContext())
-                .setTitle("Jill Zhao")
-                .setContent("Hi! So I meet you today?")
-                .setSmallIcon(R.drawable.ic_home)
-                .setLargeIcon("https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=150&w=440")
+                .setTitle("Hey AVENGER! It's Lily")
+                .setContent("Unleash your power, be the guardian of earth. Save humanity as the coolest protector.")
+                .setSmallIcon(R.drawable.launchlogo)
+                .setLargeIcon("")
                 .largeCircularIcon()
-                .setPicture("https://images.pexels.com/photos/1058683/pexels-photo-1058683.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+                .setPicture(R.drawable.noti_image2)
                 .setColor(R.color.black)
                 .show();
     }
