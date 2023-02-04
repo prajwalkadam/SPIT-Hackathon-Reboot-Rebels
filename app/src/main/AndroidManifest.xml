@@ -22,6 +22,9 @@
             android:name=".NavigationBar"
             android:exported="false" />
         <activity
+            android:name=".Scan"
+            android:exported="false" />
+        <activity
             android:name=".CreateAccount"
             android:exported="false" />
         <activity
