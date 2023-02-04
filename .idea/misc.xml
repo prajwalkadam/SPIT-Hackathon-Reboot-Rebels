@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_material_symbols_cloud_outline.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_create_account.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_login_page.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_home.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable-v24/back_arrow.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable-v24/bg_chat_receive.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable-v24/border_outline.xml" value="0.131" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/bg_chat_send.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/ic_baseline_remove_red_eye.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/ic_google.xml" value="0.2665" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/ic_home.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/ic_search.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/ic_vector.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/drawable/popup_background.xml" value="0.193" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/font/poppins.xml" value="0.2916666666666667" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/activity_chat_bot.xml" value="0.264" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/activity_create_account.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/activity_login_page.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/activity_main.xml" value="0.12135416666666667" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/activity_navigation_bar.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/activity_scan.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/adapter_message_one.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/barcodescan.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/custom_dialog.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Himanshu/AndroidStudioProjects/RebootRebelsPS10/app/src/main/res/layout/fragment_home.xml" value="0.23777173913043478" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

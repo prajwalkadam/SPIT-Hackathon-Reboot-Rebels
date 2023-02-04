@@ -12,4 +12,7 @@
     <color name="sub_heading">#545157</color>
     <color name="extra_text">#328428</color>
     <color name="blue">#0000ff</color>
+
+    <color name="cardColor">#5DC950</color>
+    <color name="textcardColor">#ffffff</color>
 </resources>
