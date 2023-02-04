@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "145164345562",
+    "firebase_url": "https://rebootrebels-3dbd0-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "rebootrebels-3dbd0",
     "storage_bucket": "rebootrebels-3dbd0.appspot.com"
   },
@@ -22,7 +23,7 @@
           }
         },
         {
-          "client_id": "145164345562-im2h9g53d8f146kfhbkm23cur2u98mag.apps.googleusercontent.com",
+          "client_id": "145164345562-o3h9jebvjn1jon4pasnb0p58p93di5l8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
