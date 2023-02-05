@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="MENU"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/idInstant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/corner_button"
+        android:text="Instant Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:background="@drawable/corner_button"
+        android:textColor="@android:color/white"
+        android:id="@+id/idExit"
+        android:layout_marginHorizontal="20dp"
+        android:text="Exit"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

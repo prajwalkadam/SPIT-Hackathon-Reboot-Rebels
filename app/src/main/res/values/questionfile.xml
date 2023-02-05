@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="QueList">
+        <item>4,,How much of the world water is available for human use?,,97%,,23%,,3%,,1%</item>
+        <item>3,,Which strategy most directly helps decrease our dependence on landfills?,,Zoning,,Wilderness protection,,Recycling,,Sustainable agriculture</item>
+        <item>4,,Which is the most environmental friendly form of travel?,,Traveling by plane,,Traveling by jet,,Personal vehicle,,Traveling by train</item>
+        <item>2,,What is the main goal of sustainable development?,,To increase economic growth at all costs,,To improve quality of life for all, while protecting the environment,,To maximize profits for corporations,,To prioritize the needs of developed countries over developing countries</item>
+        <item>2,,What is one of the biggest contributors to climate change?,,Increased use of renewable energy sources,,Deforestation,,Increased use of nuclear energy,,Decreased use of fossil fuels</item>
+        <item>2,,What is sustainability management concerned with balancing?,,Short-term and long-term priorities,,Economic, social, and environmental factors,,Social equality and environmental degradation,,Economic growth and environmental protection</item>
+        <item>3,,What are the benefits of sustainability management to organizations?,,Improved efficiency and reduced waste,,Increased market opportunities for sustainable products and services,,Both A and B,,None of the above</item>
+        <item>4,,What is one of the goals of sustainability management?,,To contribute to environmental degradation,,To promote economic growth at the expense of the environment,,To improve social well-being and equity,,To preserve natural resources and systems for future generations</item>
+        <item>4,,What is an example of an impact of human activities on the environment?,,Biodiversity loss,,Depletion of natural resources,,Climate change,,All of the above</item>
+        <item>1,,What is one way to reduce waste in the context of sustainability management?,,Short-term thinking,,Long-term perspective,,Ignoring the environment,,Maximizing profits at all costs</item>
+        <item>3,,What is a key principle of sustainability management?,,Short-term thinking,,Maximizing profits at all costs,,Long-term perspective,,Ignoring the environment</item>
+        <item>1,,What is an example of a sustainable development goal set by the United Nations?,,Climate change mitigation,,Biodiversity loss,,Depletion of natural resources,,All of the above</item>
+        <item>1,,How does sustainability management contribute to economic benefits?,,By reducing waste and improving efficiency,,By ignoring the environment,,By increasing the use of natural resources,,Neither A nor B</item>
+        <item>2,,Why is sustainability management necessary?,,To promote environmental degradation,,To ensure that natural resources and systems are preserved for future generations,,To ignore the social and economic impacts of human activities,,None of the above</item>
+    </string-array>
+
+</resources>
