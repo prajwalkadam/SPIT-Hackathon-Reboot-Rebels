@@ -12,10 +12,16 @@
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_mdi_lightbulb_group_off.xml" value="0.2005" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_shower.xml" value="0.2005" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/drawable/ic_vector.xml" value="0.2005" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_bin2_win.xml" value="0.1733181299885975" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_chat_bot.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_create_account.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_lights_out.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_line_up.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_login_page.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_main.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_no_sweat.xml" value="0.264" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_shower_sprinter.xml" value="0.21927083333333333" />
+        <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/activity_shut_eye.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_home.xml" value="0.21927083333333333" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_search.xml" value="0.264" />
         <entry key="..\:/AndroidSavedAll/SPIT-Hackathon-Reboot-Rebels/app/src/main/res/layout/fragment_starred.xml" value="0.1994750656167979" />

@@ -98,7 +98,8 @@
                         android:text="0"
                         android:textColor="@color/textcardColor"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:id="@+id/Qscore"/>
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -146,7 +147,9 @@
                         android:text="0"
                         android:textColor="@color/textcardColor"
                         android:textSize="14sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:id="@+id/taskScore"
+                        />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>

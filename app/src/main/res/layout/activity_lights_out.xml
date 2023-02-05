@@ -38,6 +38,7 @@
             tools:layout_editor_absoluteX="28dp"
             tools:layout_editor_absoluteY="16dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -49,36 +50,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:gravity="center"
             android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"
+            android:layout_marginRight="30dp"
             android:fontFamily="@font/poppins_semibold_italic"
+            android:gravity="center"
             android:text="For this Action, it gets a little tougher: Kill the lights when you leave a room (okay, okay, not that tough). Remember: Hit Buzz once when you take the action in real-life."
-            />
+            android:textColor="@color/black" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:gravity="center"
             android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
-            android:textColor="@color/black"
+            android:layout_marginRight="30dp"
             android:fontFamily="@font/poppins_semibold_italic"
+            android:gravity="center"
             android:text="Complete this task and earn 4 points!"
-            />
+            android:textColor="@color/black" />
 
 
         <Button
-            android:layout_marginTop="150dp"
+            android:id="@+id/BUZZLight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button_bg"
-            android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:text="BUZZ"/>
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_bg"
+            android:text="BUZZ" />
     </LinearLayout>
 </LinearLayout>

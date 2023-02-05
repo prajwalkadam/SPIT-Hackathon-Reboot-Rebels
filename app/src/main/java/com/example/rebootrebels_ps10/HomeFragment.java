@@ -27,7 +27,7 @@ public class HomeFragment extends Fragment {
     DatabaseReference reference;
     FirebaseUser fuser;
     FirebaseAuth mAuth;
-    TextView username;
+    TextView username,taskScore,quizScore;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -35,6 +35,9 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         FloatingActionButton fab = view.findViewById(R.id.fab);
         username=view.findViewById(R.id.name);
+        taskScore=view.findViewById(R.id.taskScore);
+        quizScore=view.findViewById(R.id.Qscore);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,11 +48,15 @@ public class HomeFragment extends Fragment {
         fuser = FirebaseAuth.getInstance().getCurrentUser();
 
         reference = FirebaseDatabase.getInstance().getReference().child("Users");
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String user = (String) dataSnapshot.child("username").getValue();
                 username.setText(user);
+                String ScoreT = (String) dataSnapshot.child("tScore").getValue();
+                taskScore.setText(ScoreT);
+                String ScoreQ = (String) dataSnapshot.child("qScore").getValue();
+                quizScore.setText(ScoreQ);
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
