@@ -89,6 +89,7 @@ public class StarredFragment extends Fragment {
         intent.setType("image/*");
         intent.setAction(Intent.ACTION_GET_CONTENT);
         startActivityForResult(intent, PICK_IMAGE_REQUEST);
+        //test
     }
 
     @Override
