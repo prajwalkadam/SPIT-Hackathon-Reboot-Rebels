@@ -1,5 +1,6 @@
 package com.example.rebootrebels_ps10;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,14 +24,16 @@ import java.util.List;
 public class Scan extends AppCompatActivity implements View.OnClickListener {
     Button scanBtn;
     TextView messageText, messageFormat;
-    TextView contentofProduct;
+    TextView contentofProduct,contents;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
-        contentofProduct = findViewById(R.id.msg);
+        contentofProduct = findViewById(R.id.abcd);
+        contents=findViewById(R.id.msg);
 
         // referencing and initializing
         // the button and textviews
@@ -129,6 +132,7 @@ public class Scan extends AppCompatActivity implements View.OnClickListener {
 
                 if (mapping.containsKey(code)) {
                     List<String> ingredients = Arrays.asList(mapping.get(code));
+                    contents.setText(ingredients.toString());
                     for (int i = 0; i < ingredients.size(); i++) {
                         if (harmfuList.contains(ingredients.get(i))) {
                             harmfulingredients.add(ingredients.get(i));

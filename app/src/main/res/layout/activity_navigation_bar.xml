@@ -60,8 +60,8 @@
             android:layout_weight="1"
             app:bt_colorActive="@color/button_bg"
             app:bt_colorInactive="@color/black"
-            app:bt_icon="@drawable/ic_star"
-            app:bt_title="Starred" />
+            app:bt_icon="@drawable/healthicons_i_exam_multiple_choice"
+            app:bt_title="Compete" />
     </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
 
 </RelativeLayout>

@@ -12,14 +12,14 @@
         android:id="@+id/textContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:textColor="@color/black"
-        android:text="messageContent" />
+        android:fontFamily="@font/poppins_semibold_italic"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/textFormat"
@@ -29,23 +29,23 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:textColor="@color/black"
-
+        android:fontFamily="@font/poppins_semibold_italic"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        android:text="messageFormat" />
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:id="@+id/scanBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:backgroundTint="#328428"
-        android:layout_gravity="center"
-        android:text="Scan"
+        android:layout_below="@+id/textFormat"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/textFormat"/>
+        android:layout_gravity="center"
+        android:background="@drawable/button_bg"
+        android:text="Scan" />
 
     <TextView
         android:layout_width="match_parent"
@@ -53,8 +53,10 @@
         android:text="Contents of the Product:"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/scanBtn"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
         android:textColor="@color/black"
-
+        android:fontFamily="@font/poppins_semibold_italic"
         android:id="@+id/contents"
         />
     <TextView
@@ -63,8 +65,31 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/contents"
         android:id="@+id/msg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
         android:textColor="@color/black"
 
         />
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harmful Contents of the Product:"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/msg"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold_italic"
+        android:id="@+id/harmfulContents"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/harmfulContents"
+        android:id="@+id/abcd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/black"
+        />
 </RelativeLayout>
