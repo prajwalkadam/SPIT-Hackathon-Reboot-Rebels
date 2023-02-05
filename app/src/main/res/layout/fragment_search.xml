@@ -6,12 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Build sustainable habits and earn rewards"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
         android:columnOrderPreserved="false"
@@ -257,14 +268,15 @@
         </androidx.cardview.widget.CardView>
 
     </GridLayout>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabchat"
-        app:backgroundTint="@color/button_bg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
         android:contentDescription="ChatBot"
-        android:src="@drawable/chatbot" />
+        android:src="@drawable/chatbot"
+        app:backgroundTint="@color/button_bg" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
