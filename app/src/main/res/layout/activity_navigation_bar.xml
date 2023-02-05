@@ -40,8 +40,8 @@
             android:layout_weight="1"
             app:bt_colorActive="@color/button_bg"
             app:bt_colorInactive="@color/black"
-            app:bt_icon="@drawable/ic_search"
-            app:bt_title="Search" />
+            app:bt_icon="@drawable/habits"
+            app:bt_title="Habits" />
 
         <com.gauravk.bubblenavigation.BubbleToggleView
             android:id="@+id/starred"
