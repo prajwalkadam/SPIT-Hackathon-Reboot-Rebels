@@ -10,10 +10,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
-        android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
         android:layout_marginTop="30dp"
         android:text="Build sustainable habits and earn rewards"
+        android:gravity="center"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"/>
